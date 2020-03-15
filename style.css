@@ -1,0 +1,375 @@
+:root {
+  --color-black: #1e1e1e;
+  --color-white: #ffffff;
+  --color-purple: #53578f;
+  --color-red: #e8322f;
+  --color-orange: #f9ae1d;
+  --color-blue: #7ecaca;
+  --base-size: 16px;
+  --duration: 90s;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  background: var(--color-white);
+  color: var(--color-black);
+  /*   background: #fff;
+  color: #000; */
+  font-family: 'Inter', sans-serif;
+  font-size: var(--base-size);
+  font-weight: 700;
+  line-height: 1.5rem;
+  text-rendering: optimizeLegibility;
+  /*   transition: background-color 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: color 0.25s cubic-bezier(0.645, 0.045, 0.355, 1); */
+}
+
+#content {
+  z-index: 6;
+}
+nav {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  padding: 0.5rem 0;
+}
+
+nav {
+  mix-blend-mode: exclusion;
+}
+nav ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  list-style-type: none;
+}
+
+nav ul li {
+  padding: 0rem 1rem;
+  width: 100%;
+  display: inline-block;
+  /*     background: yellow; */
+  text-align: left;
+}
+
+nav ul li a {
+  color: var(--color-white);
+  text-decoration: none;
+  border-bottom: 2px solid var(--color-white);
+}
+
+main {
+  background: var(--color-white);
+  color: var(--color-black);
+  /*   background: #fff;
+  color: #000; */
+  min-height: 100vh;
+  z-index: 4;
+  /* 	overflow: hidden; */
+  position: relative;
+}
+
+main a {
+  color:  var(--color-black);;
+}
+main .item {
+  width: auto;
+  position: relative;
+  min-height: 375px;
+}
+main .logo {
+  background: var(--color-orange);
+  width: 100%;
+  height: 100%;
+  background: url('portret-jeff.png') center center no-repeat;
+  background-size: cover;
+}
+
+main .logo .contain {
+  /*   background: var(--color-orange); */
+  /*   background: var(--color-black); */
+  width: 100%;
+  height: 60vh;
+  overflow: hidden;
+}
+
+.parent {
+  position: relative;
+  width: 60%;
+  /*   margin: -10% auto 0 auto; /* positioning tweak */
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.parent:before {
+  content: '';
+  display: block;
+  padding-top: 100%;
+}
+
+.animation {
+  background: url('logo-jdr-sprite.svg') no-repeat 0 0%;
+  background-size: 100%;
+  animation: sprite 0.5s steps(4) infinite;
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+@keyframes sprite {
+  from {
+    background-position: 0 0%;
+  }
+  to {
+    background-position: 0 100%;
+  }
+}
+
+main .logo img {
+  max-width: 250px;
+  margin-left: -1.25rem;
+  z-index: 2;
+  /*   mix-blend-mode: exclusion;  */
+}
+
+video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
+  mix-blend-mode: multiply;
+}
+main .intro {
+  font-weight: 700;
+
+  padding: 1rem;
+}
+
+main .intro p {
+  margin: 1rem 0;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+main .intro .small {
+  font-size: 0.75rem;
+  line-height: 1.2rem;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  height: 100%;
+}
+
+#projects {
+  background: var(--color-black);
+  color: var(--color-white);
+  position: relative;
+  z-index: 5;
+  min-height: 100vh;
+  /*   overflow: hidden; */
+}
+
+section {
+  padding: 2rem 0;
+  background: var(--color-black);
+  color: var(--color-white);
+}
+section h3,
+section h2,
+section p {
+  padding: 0 0 0 1rem;
+}
+
+section h3,
+section h2 {
+  font-size: 0.75rem;
+}
+section p {
+  font-size: 1rem;
+}
+
+section .media {
+  margin: 1rem 0;
+}
+
+section .media img {
+  width: 100%;
+}
+
+footer {
+  /* place on the bottom */
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: var(--color-orange);
+  padding: 2rem;
+  z-index: -10;
+}
+footer p {
+  margin-top: 2rem;
+}
+footer ul {
+  margin-top: 2rem;
+}
+
+footer a {
+  color: var(--color-black);
+}
+
+@media (min-width: 768px) {
+  :root {
+    /* 960 / 12 = 80px */
+    --base-amount: calc(100vw / 16);
+    /* 80 / 5 = 16px (1em) */
+    --base-size: calc(var(--base-amount) / 5);
+  }
+  nav {
+    mix-blend-mode: exclusion;
+  }
+  nav ul {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    list-style-type: none;
+  }
+
+  nav ul li {
+    padding: 0 0 0 4rem;
+    width: 100%;
+    display: inline-block;
+    /*     background: yellow; */
+  }
+
+  nav ul li:last-child {
+    text-align: right;
+    /*     background: green; */
+    padding: 0 4rem 0 0;
+  }
+
+  nav ul li a {
+    color: var(--color-white);
+    text-decoration: none;
+    border-bottom: 2px solid var(--color-white);
+  }
+
+  main {
+    display: grid;
+    grid-gap: 0;
+    min-height: 100vh;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  main .item {
+    padding: 6rem 4rem 3rem 4rem;
+  }
+
+  main .logo {
+    grid-column: 1;
+/*     background: var(--color-orange); */
+    /*     height: auto; */
+    padding: 0;
+  }
+
+  main .logo .contain {
+    height: 100vh;
+    position: sticky;
+    position: -webkit-sticky;
+    /*   background: white; */
+    top: 0;
+  }
+  
+  .parent {
+   width: 60%;
+ 
+}
+
+  main .logo img {
+    max-width: 80%;
+    margin-left: -1.25rem;
+  }
+
+  main .intro {
+    grid-column: 2;
+  }
+
+  main .intro p {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+  main .intro .small {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem 0rem;
+    padding: 3.5rem 0;
+  }
+
+  section .media {
+    grid-column: span 2;
+    width: 100%;
+  }
+
+  section p {
+    grid-column: 2 / span 1;
+  }
+  section h3,
+  section h2,
+  section p {
+    padding: 0 4rem 0 4rem;
+  }
+
+  section h3,
+  section h2 {
+    font-size: 1rem;
+  }
+  section p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  footer {
+    /*     padding: 4rem 0; */
+    color: var(--color-black);
+  }
+
+  footer p {
+    padding: 0 0 0 4rem;
+    font-size: 2rem;
+    line-height: 1.25;
+    width: 50%;
+  }
+
+  footer .contact {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+  }
+
+  footer .contact ul {
+    padding: 0 0rem 2rem 4rem;
+  }
+}
