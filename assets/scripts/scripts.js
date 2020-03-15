@@ -8,4 +8,28 @@ $('.js-anchor-link').click(function(e){
 });
 
 
-ScrollReveal().reveal('.project');
+var logoZoom = {
+  distance: '10%',
+  origin: 'bottom',
+  opacity: 0,
+  delay: 300,
+  scale: 1.25,
+  easing: 'cubic-bezier(0.5, 0, 0, 1)',
+
+};
+
+var slideUp = {
+  distance: '10%',
+  origin: 'bottom',
+  opacity: 0,
+  delay: 300,
+  reset: true
+};
+
+
+ScrollReveal().reveal('.logo', { delay: 300 });
+ScrollReveal().reveal('.animation', logoZoom);
+
+ScrollReveal().reveal('.intro', slideUp);
+ScrollReveal().reveal('.project', slideUp);
+
