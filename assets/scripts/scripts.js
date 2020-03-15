@@ -6,3 +6,6 @@ $('.js-anchor-link').click(function(e){
     $('body, html').animate({scrollTop: scrollTo+'px'}, 800);
   }
 });
+
+
+ScrollReveal().reveal('.project');
