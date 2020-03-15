@@ -26,10 +26,20 @@ var slideUp = {
   reset: true
 };
 
+var navDown = {
+  distance: '80%',
+  origin: 'top',
+  opacity: 0,
+  delay: 800,
+  reset: false
+};
+
 
 ScrollReveal().reveal('.logo', { delay: 300 });
 ScrollReveal().reveal('.animation', logoZoom);
 
 ScrollReveal().reveal('.intro', slideUp);
 ScrollReveal().reveal('.project', slideUp);
+
+ScrollReveal().reveal('.nav', navDown);
 
