@@ -12,7 +12,7 @@ var logoZoom = {
   distance: '10%',
   origin: 'bottom',
   opacity: 0,
-  delay: 300,
+  delay: 500,
   scale: 1.25,
   easing: 'cubic-bezier(0.5, 0, 0, 1)',
 
