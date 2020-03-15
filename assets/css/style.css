@@ -116,7 +116,7 @@ main .logo .contain {
 }
 
 .animation {
-  background: url('logo-jdr-sprite.svg') no-repeat 0 0%;
+  background: url('../images/logo-jdr-sprite.svg') no-repeat 0 0%;
   background-size: 100%;
   animation: sprite 0.5s steps(4) infinite;
   z-index: 2;
