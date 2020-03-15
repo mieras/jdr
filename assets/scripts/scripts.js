@@ -7,6 +7,20 @@ $('.js-anchor-link').click(function(e){
   }
 });
 
+$('.owl-carousel').owlCarousel({
+  items:1,
+  nav:true,
+  merge:true,
+  loop:true,
+  video:true,
+  margin:0,
+  lazyLoad:true,
+  center:false,
+  dots:true,
+  animateOut: 'fadeOut',
+  
+})
+
 
 var logoZoom = {
   distance: '10%',
