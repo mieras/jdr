@@ -48,7 +48,7 @@ nav {
 
 nav ul {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   list-style-type: none;
 }
 
@@ -57,14 +57,39 @@ nav ul li {
   width: 100%;
   display: inline-block;
   /*     background: yellow; */
-  text-align: left;
+  text-align: center;
 }
+
+nav ul li:first-child {
+  display: none;
+  text-align:left;
+  /*     background: green; */
+  
+}
+
+nav ul li:nth-child(2) {
+  /* display: none; */
+  text-align:left;
+  /*     background: green; */
+  
+}
+
+nav ul li:last-child {
+  
+  text-align:right;
+  /*     background: green; */
+  padding: 0 1rem 0 0;
+}
+
 
 nav ul li a {
   color: var(--color-white);
   text-decoration: none;
   border-bottom: 2px solid var(--color-white);
 }
+
+
+
 
 main {
   position: relative;
@@ -264,7 +289,7 @@ footer a {
 
   nav ul {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
     list-style-type: none;
   }
 
@@ -272,7 +297,13 @@ footer a {
     padding: 0 0 0 4rem;
     width: 100%;
     display: inline-block;
+    text-align:left
     /*     background: yellow; */
+  }
+
+  nav ul li:first-child {
+    display: inline-block;
+    padding: 0 0 0 4rem;
   }
 
   nav ul li:last-child {
