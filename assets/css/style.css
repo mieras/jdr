@@ -215,7 +215,7 @@ main .intro .small {
 
 section {
   padding: 2rem 0;
-  background: var(--color-black);
+  
   color: var(--color-white);
 }
 
@@ -242,6 +242,17 @@ section p {
   font-size: 1rem;
   font-weight: 600;
   line-height: 1.25rem;
+}
+
+section a {
+  text-decoration: none;
+  color: var(--color-white);
+  border-bottom: 0.095rem solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+section a:hover {
+  border-bottom: 0.095rem solid rgba(255, 255, 255, 0.4);
 }
 
 section .media {
@@ -278,6 +289,7 @@ footer a {
   color: var(--color-black);
   text-decoration: none;
   border-bottom: 0.095rem solid rgba(0, 0, 0, 0.4);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 footer a:hover {
