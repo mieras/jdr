@@ -284,7 +284,7 @@ footer a:hover {
   border-bottom: 0.095rem solid rgba(0, 0, 0, 0.8);
 }
 
-footer .business {
+footer .business, footer p.credits {
   font-size: 0.75rem;
   line-height: 1rem;
   font-weight: 600;
@@ -294,6 +294,8 @@ footer .business {
 footer .business li {
   margin: 0;
 }
+
+
 
 @media (min-width: 768px) {
   :root {
