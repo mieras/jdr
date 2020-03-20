@@ -16,7 +16,7 @@ $('.owl-carousel').owlCarousel({
   margin:0,
   lazyLoad:true,
   center:false,
-  dots:true,
+  dots:false,
   animateOut: 'fadeOut',
   
 })
