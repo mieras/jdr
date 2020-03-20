@@ -62,21 +62,21 @@ nav ul li {
 
 nav ul li:first-child {
   display: none;
-  text-align:left;
+  text-align: left;
   /*     background: green; */
-  
+
 }
 
 nav ul li:nth-child(2) {
   /* display: none; */
-  text-align:left;
+  text-align: left;
   /*     background: green; */
-  
+
 }
 
 nav ul li:last-child {
-  
-  text-align:right;
+
+  text-align: right;
   /*     background: green; */
   padding: 0 1rem 0 0;
 }
@@ -260,19 +260,39 @@ footer {
   width: 100%;
   background: var(--color-orange);
   padding: 2rem 1rem;
-  z-index: -10;
+  z-index: 0;
 }
 
 footer p {
   margin-top: 2rem;
+  font-size: 1.5rem;
+  letter-spacing:-0.025rem;
 }
 
 footer ul {
   margin: 2rem 0;
+  line-height: 1.5rem;
 }
 
 footer a {
   color: var(--color-black);
+  text-decoration: none;
+  border-bottom: 0.095rem solid rgba(0, 0, 0, 0.4);
+}
+
+footer a:hover {
+  border-bottom: 0.095rem solid rgba(0, 0, 0, 0.8);
+}
+
+footer .business {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 600;
+
+}
+
+footer .business li {
+  margin: 0;
 }
 
 @media (min-width: 768px) {
@@ -297,8 +317,8 @@ footer a {
     padding: 0 0 0 4rem;
     width: 100%;
     display: inline-block;
-    text-align:left
-    /*     background: yellow; */
+    text-align: left
+      /*     background: yellow; */
   }
 
   nav ul li:first-child {
