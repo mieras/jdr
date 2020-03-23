@@ -107,7 +107,7 @@ main .item {
 }
 
 main .logo {
-  background-color: var(--color-black);
+  background-color: var(--color-orange);
   background: url("../images/portret-jeff.png") center center no-repeat;
   background-size: cover;
   width: 100%;
@@ -212,7 +212,7 @@ main .intro .small {
 
 section {
   padding: 2rem 0;
-
+  
   color: var(--color-white);
 }
 
@@ -274,7 +274,7 @@ footer {
 footer p {
   margin-top: 2rem;
   font-size: 1.5rem;
-  letter-spacing: -0.025rem;
+  letter-spacing:-0.025rem;
 }
 
 footer ul {
@@ -293,8 +293,7 @@ footer a:hover {
   border-bottom: 0.095rem solid rgba(0, 0, 0, 0.8);
 }
 
-footer .business,
-footer p.credits {
+footer .business, footer p.credits {
   font-size: 0.75rem;
   line-height: 1rem;
   font-weight: 600;
@@ -310,10 +309,10 @@ footer .business li {
 }
 
 .error a {
-  color: var(--color-white);
+  color:var(--color-white);
   text-decoration: none;
 
-
+  
 }
 
 @-webkit-keyframes ticker {
@@ -321,27 +320,23 @@ footer .business li {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     visibility: visible;
-  }
-
+ }
   100% {
     -webkit-transform: translate3d(-100%, 0, 0);
     transform: translate3d(-100%, 0, 0);
-  }
+ }
 }
-
 @keyframes ticker {
   0% {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     visibility: visible;
-  }
-
+ }
   100% {
     -webkit-transform: translate3d(-100%, 0, 0);
     transform: translate3d(-100%, 0, 0);
-  }
+ }
 }
-
 .ticker-wrap {
   position: fixed;
   top: 50%;
@@ -353,7 +348,6 @@ footer .business li {
   padding-left: 100%;
   box-sizing: content-box;
 }
-
 .ticker-wrap .ticker {
   display: inline-block;
   height: auto;
@@ -370,7 +364,6 @@ footer .business li {
   -webkit-animation-duration: 10s;
   animation-duration: 10s;
 }
-
 .ticker-wrap .ticker__item {
   display: inline-block;
   padding: 0 2rem;
@@ -435,8 +428,8 @@ footer .business li {
 
   main .logo {
     grid-column: 1;
-    background: var(--color-orange);
-
+    /*     background: var(--color-orange); */
+    /*     height: auto; */
     padding: 0;
   }
 
@@ -444,6 +437,7 @@ footer .business li {
     height: 100vh;
     position: sticky;
     position: -webkit-sticky;
+    /*   background: white; */
     top: 0;
   }
 
