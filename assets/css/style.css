@@ -207,7 +207,7 @@ main .intro .small {
   position: relative;
   z-index: 5;
   min-height: 100vh;
-  /*   overflow: hidden; */
+    overflow: hidden;
 }
 
 section {
