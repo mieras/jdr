@@ -57,3 +57,8 @@ ScrollReveal().reveal('.project', slideUp);
 
 ScrollReveal().reveal('.nav', navDown);
 
+// Google Analytics
+window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-2966635-71', { 'anonymize_ip': true });

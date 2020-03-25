@@ -10,6 +10,8 @@
 
   <title>Jeffrey de Roode • JDR productions • Producer</title>
   <meta name="description" content="Rotterdam based producer of films and more. " />
+  <meta name="robots" content="index, follow">
+
   <link rel="icon" href="assets/favicon/jdr-favicon-color-01.png" />
   <link rel="apple-touch-icon" href="assets/favicon/jdr-favicon-color-01.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
@@ -20,13 +22,14 @@
   <meta name="msapplication-TileColor" content="#2d89ef" />
   <meta name="theme-color" content="#ffffff" />
   <meta name="google-site-verification" content="6MZJYmhO3FKnSQRvcmVTMB9XD5OFppxtziO8Mivs-vk" />
+
   <meta property="og:title" content="Jeffrey de Roode • JDR productions • Producer" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://jolly-bassi-49594b.netlify.com/" />
+  <meta property="og:url" content="https://jeffreyderoode.nl/" />
   <meta property="og:description" content="Rotterdam based producer of films and more. " />
-  <meta property="og:image" content="assets/images/jdr-share-default.png" />
+  <meta property="og:image" content="https://jeffreyderoode.nl/assets/images/jdr-share-default.png" />
   <link rel="stylesheet" href="assets/css/_base.css" />
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/style.min.css" />
   <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
   <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
   <script src="https://unpkg.com/scrollreveal"></script>
@@ -165,16 +168,16 @@
     <footer>
       <p>Do you want to collaborate? <br />Get in touch!</p>
       <div class="contact">
-        <ul class="details">
-          <li>Jeffrey de Roode</li>
+        <ul class="details" itemscope itemtype="http://schema.org/Person">
+          <li itemprop="name">Jeffrey de Roode</li>
+          <li itemprop="jobTitle">Producer</li>
           <li>
-            <a href="mailto:info@jdrproductions.nl">info@jdrproductions.nl</a>
+            <a href="mailto:info@jdrproductions.nl" itemprop="email">info@jdrproductions.nl</a>
           </li>
-          <li><a href="tel://+310646714731">+31(0)646714731</a></li>
-          <li class="address">
-            <a href="https://goo.gl/maps/cYWg3sJDdtzJ6WLF6" rel="noopener" target="_blank">Westersingel 97</a>
-          </li>
-          <li>3015 LC Rotterdam</li>
+          <li><a href="tel://+310646714731" itemprop="telephone">+31(0)646714731</a></li>
+          <li class="address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+            <span itemprop="streetAddress"><a href="https://goo.gl/maps/cYWg3sJDdtzJ6WLF6" rel="noopener" target="_blank">Westersingel 97</a></span>
+          <br><span itemprop="postalCode">3015 LC</span><span itemprop="addressLocality">Rotterdam</span></li>
         </ul>
         <ul class="social">
           <li>
@@ -214,6 +217,29 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'UA-2966635-71', { 'anonymize_ip': true });
+</script>
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Organization",
+    "name": "Jeffrey de Roode",
+    "url": "https://jeffreyderoode.nl/",
+    "address": "Westersingel 97",
+    "sameAs": [
+      "https://www.facebook.com/jeffrey.manuel.334",
+      "https://www.linkedin.com/in/jeffrey-de-roode-857575139/",
+      "https://www.instagram.com/jeffreyderoode/"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Westersingel 97",
+      "addressRegion": "ZH",
+      "postalCode": "3015 LC",
+      "addressLocality": "Rotterdam",
+      "addressCountry": "NL"
+    }
+  }
 </script>
 
 </body>
