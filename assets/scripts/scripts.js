@@ -39,7 +39,7 @@ var slideUp = {
   origin: 'bottom',
   opacity: 0,
   delay: 300,
-  reset: true
+  reset: false
 };
 
 var navDown = {
