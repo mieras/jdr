@@ -11,13 +11,14 @@ $('.js-anchor-link').click(function(e){
 
 $('.owl-carousel').owlCarousel({
   items:1,
+  margin:0,
   nav:true,
   merge:true,
   loop:true,
   video:true,
-  margin:0,
+  videoHeight: false,
   lazyLoad:true,
-  center:false,
+  center:true,
   dots:false,
   animateOut: 'fadeOut',
   
